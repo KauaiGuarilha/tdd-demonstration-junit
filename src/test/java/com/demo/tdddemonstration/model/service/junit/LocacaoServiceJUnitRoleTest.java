@@ -8,12 +8,12 @@ import com.demo.tdddemonstration.utils.DataUtils;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Rule;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.rules.ErrorCollector;
 
 import java.util.Date;
 
-public class LocacaoServiceJUnityRoleTest {
+public class LocacaoServiceJUnitRoleTest {
 
     /*
      @Rules serve pra validar todas as verificações, independente da primeira verificação dar erro, ele lerá todas
@@ -24,7 +24,7 @@ public class LocacaoServiceJUnityRoleTest {
     public ErrorCollector error = new ErrorCollector();
 
     @Test
-    public void testeLocacao(){
+    public void testeLocacao() throws Exception {
 
         //Cenário
         LocacaoService service = new LocacaoService();
@@ -35,8 +35,8 @@ public class LocacaoServiceJUnityRoleTest {
         Locacao locacao = service.alugarFilme(usuario, filme);
 
         //Verificação
-        error.checkThat(locacao.getValor(), CoreMatchers.is(CoreMatchers.equalTo(6)));
+        error.checkThat(locacao.getValor(), CoreMatchers.is(CoreMatchers.equalTo(5.0)));
         error.checkThat(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()), CoreMatchers.is(true));
-        error.checkThat(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)), CoreMatchers.is(false));
+        error.checkThat(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)), CoreMatchers.is(true));
     }
 }

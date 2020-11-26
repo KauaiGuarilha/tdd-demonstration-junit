@@ -5,14 +5,14 @@ import com.demo.tdddemonstration.model.entity.Locacao;
 import com.demo.tdddemonstration.model.entity.Usuario;
 import com.demo.tdddemonstration.model.service.LocacaoService;
 import com.demo.tdddemonstration.utils.DataUtils;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import java.util.Date;
 import org.junit.Assert;
 
-public class LocacaoServiceJUnityAssertTest {
+public class LocacaoServiceJUnitAssertTest {
 
     @Test
-    public void testeAssert1(){
+    public void testeAssert1() throws Exception {
 
         //Cenário
 

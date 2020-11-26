@@ -7,14 +7,14 @@ import com.demo.tdddemonstration.model.service.LocacaoService;
 import com.demo.tdddemonstration.utils.DataUtils;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Date;
 
-public class LocacaoServiceJUnityAssertThatTest {
+public class LocacaoServiceJUnitAssertThatTest {
 
     @Test
-    public void assertThat(){
+    public void assertThat() throws Exception {
 
         //Cenário
         LocacaoService service = new LocacaoService();
@@ -31,7 +31,7 @@ public class LocacaoServiceJUnityAssertThatTest {
     }
 
     @Test
-    public void assertThat2(){
+    public void assertThat2() throws Exception {
 
         //Cenário
         LocacaoService service = new LocacaoService();
@@ -48,7 +48,7 @@ public class LocacaoServiceJUnityAssertThatTest {
     }
 
     @Test
-    public void assertThat3(){
+    public void assertThat3() throws Exception {
 
         //Cenário
         LocacaoService service = new LocacaoService();
@@ -67,7 +67,7 @@ public class LocacaoServiceJUnityAssertThatTest {
 
 
     @Test
-    public void assertThatNegative(){
+    public void assertThatNegative() throws Exception {
 
         //Cenário
         LocacaoService service = new LocacaoService();

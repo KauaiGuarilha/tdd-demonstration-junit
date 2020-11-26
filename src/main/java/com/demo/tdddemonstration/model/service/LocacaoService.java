@@ -2,6 +2,8 @@ package com.demo.tdddemonstration.model.service;
 
 import static com.demo.tdddemonstration.utils.DataUtils.adicionarDias;
 
+import com.demo.tdddemonstration.exceptions.FilmeSemEstoqueException;
+import com.demo.tdddemonstration.exceptions.LocadoraException;
 import com.demo.tdddemonstration.model.entity.Filme;
 import com.demo.tdddemonstration.model.entity.Locacao;
 import com.demo.tdddemonstration.model.entity.Usuario;
@@ -11,7 +13,23 @@ import java.util.Date;
 
 public class LocacaoService {
 
-    public Locacao alugarFilme(Usuario usuario, Filme filme) {
+    public Locacao alugarFilme(Usuario usuario, Filme filme) throws FilmeSemEstoqueException, LocadoraException {
+
+        if (filme == null){
+            throw new LocadoraException("Filme vazio");
+        }
+
+        if(usuario == null){
+            throw new LocadoraException("Usuário vazio");
+        }
+
+        if(filme.getEstoque() == 0){
+            throw new FilmeSemEstoqueException();
+        }
+
+        /*if(filme.getEstoque() == 0){
+            throw new Exception("Filme sem estoque");
+        }*/
 
         Locacao locacao = new Locacao();
         locacao.setFilme(filme);
@@ -30,7 +48,7 @@ public class LocacaoService {
         return locacao;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         //Cenário
         LocacaoService service = new LocacaoService();

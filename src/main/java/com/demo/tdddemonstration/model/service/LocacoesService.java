@@ -27,8 +27,11 @@ public class LocacoesService {
 
             if(filme.getEstoque() == 0){
                 throw  new FilmeSemEstoqueException();
-                //Sempre que chamo uma exception específica, estou garantido que o problema é único para essa situação
-                // E não de forma genérica
+                /*
+                 Sempre que chamo uma exception específica, estou garantido que o problema é único para essa situação
+                 e não de forma genérica
+                */
+
             }
         }
 
