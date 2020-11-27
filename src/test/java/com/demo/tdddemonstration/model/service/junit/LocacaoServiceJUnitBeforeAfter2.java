@@ -9,7 +9,7 @@ import org.junit.*;
 
 import java.util.Date;
 
-public class LocacaoServiceBeforeAfter2 {
+public class LocacaoServiceJUnitBeforeAfter2 {
 
     /*
      Toda vez que a classe recebe uma instância ou variável, o JUnit reinicializa a variável por método,

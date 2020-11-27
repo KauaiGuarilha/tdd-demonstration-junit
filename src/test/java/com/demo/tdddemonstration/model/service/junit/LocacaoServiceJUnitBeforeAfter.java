@@ -12,13 +12,13 @@ import org.junit.Test;
 
 import java.util.Date;
 
-public class LocacaoServiceBeforeAfter {
+public class LocacaoServiceJUnitBeforeAfter {
 
     private LocacaoService service;
 
     /*
      Before: Geralmente utilizado para iniciar instâncias que se repetem, porém precisam ser globais
-     After: Geralmente utilizado para
+     After: Geralmente utilizado para limpar a memória de alguma instância
     */
 
     @Before
