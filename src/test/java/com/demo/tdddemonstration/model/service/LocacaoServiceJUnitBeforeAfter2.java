@@ -1,36 +1,38 @@
-package com.demo.tdddemonstration.model.service.junit;
+package com.demo.tdddemonstration.model.service;
 
 import com.demo.tdddemonstration.model.entity.Filme;
 import com.demo.tdddemonstration.model.entity.Locacao;
 import com.demo.tdddemonstration.model.entity.Usuario;
 import com.demo.tdddemonstration.model.service.LocacaoService;
 import com.demo.tdddemonstration.utils.DataUtils;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.Date;
 
-public class LocacaoServiceJUnitBeforeAfter {
+public class LocacaoServiceJUnitBeforeAfter2 {
+
+    /*
+     Toda vez que a classe recebe uma instância ou variável, o JUnit reinicializa a variável por método,
+     para manter o valor, basta criar uma variável de forma static.
+    */
 
     private LocacaoService service;
 
-    /*
-     Before: Geralmente utilizado para iniciar instâncias que se repetem, porém precisam ser globais
-     After: Geralmente utilizado para limpar a memória de alguma instância
-    */
-
     @Before
-    public void beforeSetup(){
+    public void beforeSetup() {
         service = new LocacaoService();
-
-        System.out.println("Before: Será executado antes de cada método de teste.");
     }
 
-    @After
-    public void afterSetup(){
-        System.out.println("After: Será executado depois de cada método de teste.");
+    @BeforeClass
+    public static void beforeClassSetup(){
+        LocacaoService service = new LocacaoService();
+
+        System.out.println("BeforeClass: Será executado antes de todos os métodos de teste.");
+    }
+
+    @AfterClass
+    public static void afterClassSetup(){
+        System.out.println("AfterClass: Será executado depois de todos os métodos de teste.");
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.model.service.junit;
+package com.demo.tdddemonstration.model.service;
 
 import com.demo.tdddemonstration.exceptions.FilmeSemEstoqueException;
 import com.demo.tdddemonstration.exceptions.LocadoraException;

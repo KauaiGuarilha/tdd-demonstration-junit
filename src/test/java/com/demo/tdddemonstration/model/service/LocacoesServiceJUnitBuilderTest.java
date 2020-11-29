@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.model.service.junit;
+package com.demo.tdddemonstration.model.service;
 
 import com.demo.tdddemonstration.utils.builders.FilmeBuilder;
 import com.demo.tdddemonstration.utils.builders.UsuarioBuilder;

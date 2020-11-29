@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.model.service.junit;
+package com.demo.tdddemonstration.model.service;
 
 import com.demo.tdddemonstration.model.entity.Filme;
 import com.demo.tdddemonstration.model.entity.Locacao;

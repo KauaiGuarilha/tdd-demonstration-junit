@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.model.service.junit;
+package com.demo.tdddemonstration.model.service;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
