@@ -1,4 +1,3 @@
 package com.demo.tdddemonstration.exceptions;
 
-public class FilmeSemEstoqueException extends Exception {
-}
+public class FilmeSemEstoqueException extends Exception {}
