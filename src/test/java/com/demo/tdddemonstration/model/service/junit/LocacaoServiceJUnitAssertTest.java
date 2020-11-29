@@ -7,9 +7,8 @@ import com.demo.tdddemonstration.model.service.LocacaoService;
 import com.demo.tdddemonstration.utils.DataUtils;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
+
 
 import org.junit.Assert;
 
