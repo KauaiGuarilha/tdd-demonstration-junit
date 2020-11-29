@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.demo</groupId>
-	<artifactId>tdd-demonstration</artifactId>
+	<artifactId>tdd-demonstration-junit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
-	<description>Demonstration of practices with Test-driven development</description>
+	<description>Demonstration of practices with Test-driven development with JUnit</description>
 
 	<properties>
 		<java.version>1.8</java.version>
