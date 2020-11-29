@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.builders;
+package com.demo.tdddemonstration.utils.builders;
 
 import com.demo.tdddemonstration.model.entity.Filme;
 

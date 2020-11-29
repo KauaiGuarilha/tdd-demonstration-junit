@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.suites;
+package com.demo.tdddemonstration.utils.suites;
 
 import com.demo.tdddemonstration.model.service.junit.LocacaoServiceJUnitAssertTest;
 import com.demo.tdddemonstration.model.service.junit.LocacaoServiceJUnitAssertThatTest;

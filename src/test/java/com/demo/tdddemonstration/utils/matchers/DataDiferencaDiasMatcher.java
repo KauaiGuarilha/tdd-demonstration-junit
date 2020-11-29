@@ -1,10 +1,9 @@
-package com.demo.tdddemonstration.matchers;
+package com.demo.tdddemonstration.utils.matchers;
 
 import com.demo.tdddemonstration.utils.DataUtils;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class DataDiferencaDiasMatcher extends TypeSafeMatcher<Date> {

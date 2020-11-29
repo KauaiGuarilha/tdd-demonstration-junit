@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.matchers;
+package com.demo.tdddemonstration.utils.matchers;
 
 import java.util.Calendar;
 

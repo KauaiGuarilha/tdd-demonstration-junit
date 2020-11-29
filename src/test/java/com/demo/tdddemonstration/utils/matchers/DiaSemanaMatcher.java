@@ -1,4 +1,4 @@
-package com.demo.tdddemonstration.matchers;
+package com.demo.tdddemonstration.utils.matchers;
 
 import com.demo.tdddemonstration.utils.DataUtils;
 import org.hamcrest.Description;

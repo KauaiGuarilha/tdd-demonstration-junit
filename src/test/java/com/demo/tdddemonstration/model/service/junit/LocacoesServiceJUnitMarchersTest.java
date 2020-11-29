@@ -2,7 +2,7 @@ package com.demo.tdddemonstration.model.service.junit;
 
 import com.demo.tdddemonstration.exceptions.FilmeSemEstoqueException;
 import com.demo.tdddemonstration.exceptions.LocadoraException;
-import com.demo.tdddemonstration.matchers.DiaSemanaMatcher;
+import com.demo.tdddemonstration.utils.matchers.DiaSemanaMatcher;
 import com.demo.tdddemonstration.model.entity.Filme;
 import com.demo.tdddemonstration.model.entity.Locacao;
 import com.demo.tdddemonstration.model.entity.Usuario;
@@ -16,7 +16,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import static com.demo.tdddemonstration.matchers.MatchersProprios.*;
+import static com.demo.tdddemonstration.utils.matchers.MatchersProprios.*;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
