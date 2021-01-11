@@ -50,6 +50,7 @@ public class LocacaoService {
         //Ação
         Locacao locacao = service.alugarFilme(usuario, filme);
 
+        
         //Verificação
         System.out.println(locacao.getValor() == 5.0);
         System.out.println(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
